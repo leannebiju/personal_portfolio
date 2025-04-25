@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fdfd;
+  color: #102a43;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #008080;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-family: 'Indie Flower', cursive;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#hero {
+    max-width: none;
+    margin: 0;
+}
+
+  
+#hero {
+  background: linear-gradient(to right, #e0f7f7, #f9fdfd);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  color: #008080;
+}
+
+.hero-content img {
+  width: 300px;
+  border-radius: 1rem;
+}
+
+#about, #skills, #contact {
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  background-color: #d0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+#projects .project-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #d9f5f5;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 128, 128, 0.1);
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-card .icon {
+  width: 48px;
+  margin-bottom: 1rem;
+}
+
+.project-card button {
+  background-color: #008080;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.project-card button:hover {
+  background-color: #006666;
+}
+
+#contact a {
+  color: #008080;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #008080;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .contact-item img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .contact-item a {
+    color: #008080;
+    text-decoration: none;
+    font-weight: 600;
+  }
